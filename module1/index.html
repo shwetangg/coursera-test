@@ -1,29 +1,35 @@
-<!doctype html>
-<html lang="en">
+<!Doctype html>
+<html lang="en" ng-app="LunchChecker">
   <head>
     <title>Lunch Checker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <style>
       .message { font-size: 1.3em; font-weight: bold; }
+      .message-green {color: green;}
+      .message-red {color: red;}
+      .border-green {border: 2px solid green;}
+      .border-red {border: 2px solid red;}
+    
     </style>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
   </head>
 <body>
-   <div class="container">
-     <h1>Lunch Checker</h1>
+   <div class="container" ng-controller="LunchCheckerController">
+     <h1>Lunch Checker{{name}}</h1>
 
          <div class="form-group">
-             <input id="lunch-menu" type="text"
+             <input id="lunch-menu" type="text" ng-model="lunchItems"
              placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control">
+             class="form-control" ng-class="borderClass">
          </div>
          <div class="form-group">
-             <button class="btn btn-default">Check If Too Much</button>
+             <button class="btn btn-default" ng-click="checkIfTooMuch()">Check If Too Much</button>
          </div>
-         <div class="form-group message">
-           <!-- Your message can go here. -->
-         </div>
-   </div>
-
+         <div class="form-group message" ng-class="messageClass">
+            {{ name }}
+          </div>
+  </div>
 </body>
 </html>
