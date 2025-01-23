@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+.message { font-size: 1.3em; font-weight: bold; }
+.message-green {color: green;}
+.message-red {color: red;}
+.border-green {border: 2px solid green;}
+.border-red {border: 2px solid red;}

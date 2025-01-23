@@ -1,0 +1,12 @@
+.btn-default {
+    border: 2px solid #007bff; /* Add a solid border */
+    border-radius: 4px; /* Optional: Add rounded corners */
+    padding: 10px 20px; /* Optional: Add padding for better appearance */
+    background-color: #007bff; /* Optional: Add background color */
+    color: white; /* Optional: Add text color */
+  }
+  
+  .btn-default:hover {
+    background-color: #0056b3; /* Optional: Change background color on hover */
+    border-color: #0056b3; /* Optional: Change border color on hover */
+  }

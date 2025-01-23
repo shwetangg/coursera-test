@@ -17,7 +17,7 @@
   </head>
 <body>
    <div class="container" ng-controller="LunchCheckerController">
-     <h1>Lunch Checker{{name}}</h1>
+     <h1>{{title}}</h1>
 
          <div class="form-group">
              <input id="lunch-menu" type="text" ng-model="lunchItems"
@@ -28,7 +28,7 @@
              <button class="btn btn-default" ng-click="checkIfTooMuch()">Check If Too Much</button>
          </div>
          <div class="form-group message" ng-class="messageClass">
-            {{ name }}
+            {{ title }}
           </div>
   </div>
 </body>
