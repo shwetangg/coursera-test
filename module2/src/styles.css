@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+.list-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.list {
+  width: 45%;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+.message {
+  text-align: center;
+  font-style: italic;
+  color: grey;
+  width: 10em;
+}
+.liwidth{
+  width: 12em;
+  margin: 5px;
+}
+.btnspace{
+  margin-left: 12px;
+}
