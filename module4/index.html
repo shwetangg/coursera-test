@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MenuApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/data.module.js"></script>
+    <script src="app/menudata.service.js"></script>
+    <script src="app/routes.js"></script>
+    <script src="app/categories.component.js"></script>
+    <script src="app/items.component.js"></script>
+    <script src="app/Controllers/CategoriesController.js"></script> <!-- Update with correct paths -->
+    <script src="app/Controllers/ItemsController.js"></script> <!-- Update with correct paths -->
+</head>
+<body>
+  <div class="container">
+    <ui-view></ui-view>
+  </div>
+</body>
+</html>
