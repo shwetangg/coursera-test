@@ -1,0 +1,19 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "David Chu's China Bistro",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -a localhost -p 8000"
+  },
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-ui-router": "^1.0.29",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  },
+  "author": "Your Name",
+  "license": "ISC"
+}

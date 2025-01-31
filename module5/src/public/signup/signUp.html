@@ -1,0 +1,25 @@
+<div class="container">
+  <form name="signUpForm" ng-submit="signUpCtrl.submitForm(signUpForm)" novalidate>
+    <div class="row">
+      <div class="col-md-2">
+        First Name : <input type="text" name="firstName" class="signupInput" ng-model="signUpCtrl.user.firstName" required />
+      </div>
+      <div class="col-md-2">
+        Last Name : <input type="text" name="lastName" class="signupInput" ng-model="signUpCtrl.user.lastName" required />
+      </div>
+      <div class="col-md-2">
+        Email : <input type="email" name="email" class="signupInput" ng-model="signUpCtrl.user.email" required />
+      </div>
+      <div class="col-md-2"> 
+        Phone No. : <input type="tel" name="phone" class="signupInput" ng-model="signUpCtrl.user.phone" required />
+      </div>
+      <div class="col-md-2">
+        Favorite Dish : <input type="text" name="favoriteDish" class="signupInput" ng-model="signUpCtrl.user.favoriteDish" required />
+      </div>
+      <div class="col-md-2"> 
+        <button type="submit" class="btn btn-primary btnMargin">Submit</button>
+      </div>
+    </div>
+    <p>{{ signUpCtrl.message }}</p>
+   </form>
+</div>
