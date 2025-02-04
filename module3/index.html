@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="NarrowItDownApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Narrow It Down</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="app/app.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">  
+      <div ng-controller="NarrowItDownController as narrowItDown">
+        <input type="text" ng-model="narrowItDown.searchTerm" placeholder="Search term">
+        <button ng-click="narrowItDown.getMatchedMenuItems()">Narrow It Down For Me!</button>
+        <found-items found="narrowItDown.found" on-remove="narrowItDown.removeItem(index)"></found-items>
+    </div>
+  </div>
+</body>
+</html>
